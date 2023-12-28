@@ -1,0 +1,32 @@
+<div *ngIf="bool" class="pokemon-details-container">
+    <h2>{{ pokemon.name }}</h2>
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th scope="row">Type</th>
+          <td>{{ pokemon.type }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Height</th>
+          <td>{{ pokemon.height }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Weight</th>
+          <td>{{ pokemon.weight }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Habitat</th>
+          <td>{{ pokemon.habitat }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Evolves to</th>
+          <td>{{ pokemon.evolves_to }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Baby</th>
+          <td>{{ pokemon.baby }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

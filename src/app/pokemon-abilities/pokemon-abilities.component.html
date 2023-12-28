@@ -1,0 +1,16 @@
+<div class="abilities-section">
+  <p><strong>Abilities:</strong></p>
+  <ul>
+    <li *ngFor="let element of abilities">{{ element.ability.name }}</li>
+  </ul>
+</div>
+
+<div class="stats-section">
+  <p><strong>Base Stats:</strong></p>
+  <table>
+    <tr *ngFor="let element of stats">
+      <td>{{ element.stat.name }}</td>
+      <td>{{ element.base_stat }}</td>
+    </tr>
+  </table>
+</div>

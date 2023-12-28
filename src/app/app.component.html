@@ -1,0 +1,23 @@
+<!-- app.component.html -->
+
+<div class="pokemon-container">
+  <div *ngIf="loaded" class="nav-container">
+    <a routerLink="" class="nav-button">Home</a>
+    <a routerLink="/pokemon-details" class="nav-button">Pokemon Details</a>
+    <a routerLink="/pokemon-abilities" class="nav-button">Pokemon Abilities</a>
+    <a routerLink="/see-pokemon-3d" class="nav-button">See Pokemon in 3D</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+<div class="home-container" *ngIf="isHomePage">
+  <div class="search-section">
+    <label for="pokemonSearch">Search Pokémon:</label>
+    <div class="search-input">
+      <input type="text" id="pokemonSearch" [(ngModel)]="searchTerm" />
+      <button (click)="searchPokemon()">Search</button>
+    </div>
+  </div>
+  <!-- Other content for the home component -->
+</div>
